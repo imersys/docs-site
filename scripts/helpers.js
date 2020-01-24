@@ -131,7 +131,7 @@ hexo.extend.helper.register('blog_date_subtract_week', function (date) {
  * aframevr/aframe-editor|#1000 -> github.com/aframevr/aframe-editor/pull/1000
  */
 hexo.extend.helper.register('github_contribution', function (contribution, display) {
-  var project = this.config.github.aframe.username + '/' + this.config.github.aframe.repo;
+  var project = this.config.github.imersysdocs.username + '/' + this.config.github.imersysdocs.repo;
   var contributionSplit;
   display = display || contribution;
 
@@ -153,14 +153,13 @@ hexo.extend.helper.register('github_contribution', function (contribution, displ
 /**
  * Get GitHub edit URL.
  * - Change .html to .md.
- * - For docs, must remove the active version (e.g., docs/0.2.0/guide.html -> docs/guide.md).
  */
 hexo.extend.helper.register('website_github_edit_url', function (path) {
   // For docs.
+
   if (path.indexOf('docs/') !== -1) {
-    var activeVersion = path.split('/')[path.split('/').indexOf('docs') + 1];
-    return urljoin(this.config.github.aframe.url, 'edit', MASTER,
-                   path.replace('docs/' + activeVersion, 'docs').replace(/\.html$/, '.md'));
+    return urljoin(this.config.github.imersysdocs.url, 'edit', MASTER,
+                   path.replace(/\.html$/, '.md'));
   }
 });
 

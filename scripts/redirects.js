@@ -15,8 +15,8 @@ aframeVersions.push(MASTER);
 
 hexo.extend.generator.register('community-short-url-redirects', function () {
   return expandRedirectObjs([
-    ['github/', hexo.config.github.aframe.url],
-    ['repo/', hexo.config.github.aframe.url],
+    ['github/', hexo.config.github.imersysdocs.url],
+    ['repo/', hexo.config.github.imersysdocs.url],
 
     ['twitter/', hexo.config.twitter.url],
 

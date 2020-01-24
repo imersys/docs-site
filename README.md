@@ -1,8 +1,6 @@
 # Imersys docs-site
 
-This site is built using [hexo](http://hexo.io/). Site content is written in
-[Markdown](http://daringfireball.net/projects/markdown/syntax) (and located in
-the [`src/`](src/) directory). Pull requests are welcome!
+[Imersys docs site](https://docs.imersys.com/) is built using [hexo](http://hexo.io/). Most of site's actual content is written in [Markdown](http://daringfireball.net/projects/markdown/syntax) and located in [another repository](https://github.com/imersys/docs-site-content/). Pull requests are always welcome!
 
 ## Local Development
 
