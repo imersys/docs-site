@@ -18,7 +18,7 @@ theme_color: black
 
 # URL.
 ## If your site is put in a sub-directory, set URL as `http://yoursite.com/child` and root as `/child/`.
-url: https://aframe.io
+url: https://docs.imersys.com
 root: /
 permalink: blog/:title/
 tag_dir: tags
@@ -113,19 +113,11 @@ marked:
 browsersync:
   notify: false
 
-# Deployment.
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: git@github.com:aframevr/aframevr.github.io.git
-
-disqus_shortname:
 twitter:
   username: aframevr
   url: https://twitter.com/aframevr/
 google_analytics: UA-24056643-4
 google_analytics_mozilla_managers: UA-35433268-69
-fb_app_id: 1535794316743373
 
 github:
   imersysdocs:
