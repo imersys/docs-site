@@ -20,6 +20,9 @@ generators, and helpers in `scripts/`, you will need to restart the server on
 every change.
 
 ## Deployment
+    npm version patch
+
+    git push && git push origin --tags
 
     npm run generate
 
