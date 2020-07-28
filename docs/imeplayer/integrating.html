@@ -1,0 +1,443 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en"
+      data-is-home="false"
+      data-is-mobile="false"
+      data-supports-vr="false"
+      data-supports-touch="false"
+      data-site-base-url="https://docs.imersys.com"
+      data-site-root-path="/"
+      data-site-home-url="https://docs.imersys.com/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
+      data-title="{title} | Imersys | Docs"
+      data-is-spa="false"
+      data-imersysdocs_version="master"
+      data-docs-version="imeplayer">
+  <head>
+    <title>Integrando na Web – Imersys | Docs</title>
+    
+
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://docs.imersys.com') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
+
+    <meta charset="utf-8">
+    <!-- Don't index old documentation pages. -->
+    <meta name="robots"
+      content="NOINDEX">
+    <meta name="description" content="">
+    <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Origin Trial Token, feature = WebXR Device API, origin = https://aframe.io, expires = 2018-03-05 -->
+    <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
+    <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
+    <link rel="canonical" href="https://docs.imersys.com">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
+    <meta property="og:title" content="Integrando na Web – Imersys | Docs">
+    <meta property="og:site_name" content="Imersys | Docs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.imersys.com">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://docs.imersys.com/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://docs.imersys.com/images/card.jpg?v2">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aframevr">
+    <meta name="twitter:creator" content="@aframevr">
+    <meta name="twitter:title" content="Integrando na Web – Imersys | Docs">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://docs.imersys.com/images/card.jpg?v2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" sizes="192x192" href="/images/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://docs.imersys.com/images/imersys-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://docs.imersys.com/feed.xml">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96167875-3', 'auto');
+
+  ga('send', 'pageview');
+
+  ga('send', 'event', 'pageload.querystring', window.location.search);
+
+  ga('send', 'event', 'pageload.hash', window.location.hash);
+
+  ga('send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+
+  ga('send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+
+  ga('send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
+</script>
+
+
+    
+      
+<script src="/js/compat.js"></script>
+
+    
+
+    
+      
+<link rel="stylesheet" href="/css/secondary.css">
+
+    
+  <meta name="generator" content="Hexo 4.2.1"></head>
+
+  <body data-page-layout="docs" data-page-type="imeplayer">
+    <main id="main" class="main">
+
+
+<!-- Navigation. -->
+<div class="wordmark">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Imersys | Docs">
+      <span class="logo__wordmark">Imersys | Docs</span>
+    </a>
+  </header>
+
+  
+
+
+<input type="search" style='visibility: hidden'></input>
+
+
+</div>
+
+<aside id="sidebar" class="sidebar borderless-links">
+  
+
+<div id="secondary-nav" class="secondary-nav">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Imersys | Docs">
+      <span class="logo__wordmark">Imersys | Docs</span>
+    </a>
+  </header>
+
+  <ul id="nav" class="nav">
+    
+      <li  class="nav-item">
+        <a href="/docs/"
+           class="nav-link nav-link-docs current nav-link-disabled"
+           
+           >
+          <span>Docs</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="list">
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">Introdução</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/introducao/"
+               class="subnav-link">
+              Sobre o Docs
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">Ambia 360</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/"
+               class="subnav-link">
+              Instalando no Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/moodle.html"
+               class="subnav-link">
+              Instalando no Moodle
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/catalogo.html"
+               class="subnav-link">
+              Acessando o Catálogo Ambia
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/blackboard-usage.html"
+               class="subnav-link">
+              Adicionando vídeos ao Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/moodle-usage.html"
+               class="subnav-link">
+              Adicionando vídeos ao Moodle
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-active">
+        <p class="section-title-link">Ime Player</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/imeplayer/"
+               class="subnav-link">
+              Tocando vídeos 360°
+            </a>
+          </li>
+        
+          <li class="subnav-item  subnav-item-current">
+            <a href="/docs/imeplayer/integrating.html"
+               class="subnav-link current">
+              Integrando na Web
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/imeplayer/offline.html"
+               class="subnav-link">
+              Assistindo videos offline
+            </a>
+          </li>
+        
+      </ol>
+    
+  </div>
+</aside>
+
+  <!-- Documentation. -->
+  <div class="content content--structured content--imeplayer copy">
+    <div class="mobile-header">
+  <a id="sidebar-toggle" href="#" title="Toggle sidebar">&equiv;</a>
+  <h1><a href="/">Imersys | Docs</a></h1>
+  <span></span>
+</div>
+
+<script>
+  (function() {
+    var sidebarEl = document.querySelector('#sidebar');
+    var toggleEl = document.querySelector('#sidebar-toggle');
+
+    // Open sidebar on toggle click.
+    toggleEl.addEventListener('click', function () {
+      sidebarEl.classList.add('sidebar-open');
+    });
+
+    // Close sidebar when clicking content.
+    document.body.addEventListener('click', function (evt) {
+      if (evt.target !== toggleEl && !evt.target.closest('#sidebar')) {
+        sidebarEl.classList.remove('sidebar-open');
+      }
+    });
+
+    function closest (el, selector) {
+      var matchesFn;
+      var parent;
+      // Vendor prefix.
+      ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector',
+       'oMatchesSelector'].some(function (fn) {
+          if (typeof document.body[fn] == 'function') {
+            matchesFn = fn;
+            return true;
+          }
+          return false;
+      });
+      // Traverse parents.
+      while (el) {
+        parent = el.parentElement;
+        if (parent && parent[matchesFn](selector)) { return parent; }
+        el = parent;
+      }
+      return null;
+    }
+  })();
+</script>
+
+
+    <div class="copy__wrap">
+      <div class="page__section docs-header">
+        <p>
+          <a href="/docs/imeplayer/" class="borderless-link">
+            imeplayer &rsaquo; Ime Player
+          </a>
+        </p>
+      </div>
+      <h1 class="page__title">
+        Integrando na Web
+      </h1>
+
+      
+
+      <blockquote>
+<p>Esse guia tem como objetivo auxiliar na integração do <strong>Ime Player</strong>  em uma <strong>página</strong> ou <strong>aplicativo Web</strong>. Esse guia é primariamente destinado à <strong>administradores de sistemas</strong> e o conhecimento básico de HTML e CSS é um requisito.</p>
+</blockquote>
+<h2 id="iniciando-a-integracao"><a href="#iniciando-a-integracao" class="headerlink" title="Iniciando a integração"></a>Iniciando a integração</h2><p>Para integrar o Ime Player em seu html, você deverá incluir o seguinte trecho dentro do <code>&lt;body&gt;</code>:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">  <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"360"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">"border: 0"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Pronto! Uma característica importante do Ime Player é que a integração ocorre sem a necessidade de instalações. Ou seja, uma vez você aplique o trecho de código a cima em seu aplicativo ou página Web a visualização será a seguinte:</p>
+<iframe
+      id="player"
+      width="100%" height="360"
+      style="border: 0"
+      allow="xr-spatial-tracking,gyroscope,accelerometer,fullscreen"
+      src="https://player.imersys.com/video/366335646">
+</iframe>
+
+<h2 id="configuracao"><a href="#configuracao" class="headerlink" title="Configuração"></a>Configuração</h2><h3 id="fullscreen"><a href="#fullscreen" class="headerlink" title="Fullscreen"></a>Fullscreen</h3><p>Uma característica importante nos vídeos 360 graus é a visualização imersiva, mesmo quando não utilizado um headset de Realidade Virtual. Então muito provavelmente você vai querer integrar o Ime Player em sua aplicação cobrindo toda tela do seu dispositivo no modo fullscreen. Para isso será necessário definir alguns parâmetros na folhas de estilos CSS. Por exemplo:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.player</span> &#123;</span></span><br><span class="line">      position: absolute;</span><br><span class="line">      border: 0;</span><br><span class="line">      top: 0;</span><br><span class="line">      left: 0;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">    <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">height</span>=<span class="string">"100%"</span> <span class="attr">width</span>=<span class="string">"100%"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="mobile-android-ios"><a href="#mobile-android-ios" class="headerlink" title="Mobile (Android, iOS)"></a>Mobile (Android, iOS)</h3><p>Outra característica desejada é a visualização de vídeos nos dispositivos mobile. Então não se esqueça também de adicionar o parâmetro <code>meta</code> dentro do <code>&lt;head&gt;</code> (para que a visualização seja na escala compatível com o tamanho da tela do seu dispositivo) e o script <code>imeplayer-embed</code>.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    body &#123;</span><br><span class="line">      overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.player</span> &#123;</span></span><br><span class="line">      position: absolute;</span><br><span class="line">      border: 0;</span><br><span class="line">      top: 0;</span><br><span class="line">      left: 0;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">iframe</span></span></span><br><span class="line"><span class="tag">    <span class="attr">id</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">class</span>=<span class="string">"player"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">height</span>=<span class="string">"100%"</span> <span class="attr">width</span>=<span class="string">"100%"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">allow</span>=<span class="string">"xr-spatial-tracking,gyroscope,accelerometer,fullscreen"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"https://player.imersys.com/video/366335646"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">"//unpkg.com/imeplayer-embed@latest/dist/embed.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="chaves-de-autenticacao"><a href="#chaves-de-autenticacao" class="headerlink" title="Chaves de autenticação"></a>Chaves de autenticação</h3><p>Em breve…</p>
+<h2 id="agora-e-com-voce"><a href="#agora-e-com-voce" class="headerlink" title="Agora é com você!"></a>Agora é com você!</h2><p>Qualquer dúvidas que você tenha na integração, a equipe da Imersys estará super disposta a ajudar. Envie um e-mail para <a href="mailto:suporte@imersys.com">suporte@imersys.com</a>.</p>
+
+
+      <!-- Previous / Next navigation. -->
+      <footer class="footer guide-links c">
+        
+          <span class="float-left">
+            <a href="/docs/imeplayer/" class="guide-link guide-link-left">← Tocando vídeos 360° </a></span>
+        
+        
+          <span class="float-right">
+            <a href="/docs/imeplayer/offline.html" class="guide-link guide-link-right">Assistindo videos offline →</a></span>
+        
+      </footer>
+
+      <footer class="footer footnote">
+  <p>
+    Os produtos da Imersys contêm copyright e licenças proprietárias individuais. Por favor entre em contato conosco para certificar das condições antes de utilizar qualquer produto.
+  </p>
+  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/imeplayer/integrating.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
+</footer>
+
+    </div>
+
+    <div class="secondary-sidebar">
+      
+
+<div id="table-of-contents" class="nav-list">
+  <p class="section-title docs-section-title">Conteúdo</p>
+
+  <ul class="subnav">
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#iniciando-a-integracao">Iniciando a integração</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+          </ul>
+        
+      </li>
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#configuracao">Configuração</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#fullscreen">Fullscreen</a>
+              </li>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#mobile-android-ios">Mobile (Android, iOS)</a>
+              </li>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#chaves-de-autenticacao">Chaves de autenticação</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#agora-e-com-voce">Agora é com você!</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+</div>
+
+      
+
+      <div class="doc-actions">
+        <a class="docs-suggest-edit github-file-link" href="https://github.com/imersys/docs-site-content/edit/master/docs/imeplayer/integrating.md" target="_blank" rel="external">Editar Página</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    
+      
+<script src="/js/common.js"></script>
+
+      
+        
+<script src="/js/docs.js"></script>
+
+      
+    
+  </body>
+</html>

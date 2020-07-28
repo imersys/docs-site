@@ -1,0 +1,408 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en"
+      data-is-home="false"
+      data-is-mobile="false"
+      data-supports-vr="false"
+      data-supports-touch="false"
+      data-site-base-url="https://docs.imersys.com"
+      data-site-root-path="/"
+      data-site-home-url="https://docs.imersys.com/"
+      data-lib-home-url="https://aframe.io/"
+      data-lib-examples-url="https://aframe.io/aframe/examples"
+      data-title="{title} | Imersys | Docs"
+      data-is-spa="false"
+      data-imersysdocs_version="master"
+      data-docs-version="ambia360">
+  <head>
+    <title>Acessando o Catálogo Ambia – Imersys | Docs</title>
+    
+
+<script>
+  var host = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.protocol === 'http:' &&
+      window.location.hostname === 'https://docs.imersys.com') {
+    window.location.href = 'https:' + window.location.href.substring(6);
+  }
+</script>
+
+
+    <meta charset="utf-8">
+    <!-- Don't index old documentation pages. -->
+    <meta name="robots"
+      content="NOINDEX">
+    <meta name="description" content="">
+    <meta name="keywords" content="webvr,webvr framework,webvr demos,webvr sites,vr javascript,vr framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Origin Trial Token, feature = WebXR Device API, origin = https://aframe.io, expires = 2018-03-05 -->
+    <meta http-equiv="origin-trial" data-feature=" WebXR Device API (For Chrome M69+)" data-expires="2019-03-05" content="Ako5ueZ8LIub4MywyaWBtX6FQOVZBYPxDUBC09XfJRjVfQH1GXOaRO8v4/TQWyPdmw2qm8nJ/f9QfFwE+t20NwsAAABkeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViWFJEZXZpY2VNNjkiLCJleHBpcnkiOjE1NTE4MzAzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://aframe.io, expires = 2018-08-09 -->
+    <meta http-equiv="origin-trial" data-feature="WebVR (For Chrome M62+)" data-expires="2018-08-09" content="AlKeBeX7MGtuPmoZUks7FEWi6ke/EeYDPS1zhkb9bsdGr+r9gv+vYXGN7pUIz8+4XPxpWi7guenedSC1jM8B6AcAAABOeyJvcmlnaW4iOiJodHRwczovL2FmcmFtZS5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MzM4NDAyMzN9">
+    <link rel="canonical" href="https://docs.imersys.com">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600" rel="stylesheet">
+    <meta property="og:title" content="Acessando o Catálogo Ambia – Imersys | Docs">
+    <meta property="og:site_name" content="Imersys | Docs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.imersys.com">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://docs.imersys.com/images/card.jpg?v2">
+    <meta property="og:image:secure_url" content="https://docs.imersys.com/images/card.jpg?v2">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aframevr">
+    <meta name="twitter:creator" content="@aframevr">
+    <meta name="twitter:title" content="Acessando o Catálogo Ambia – Imersys | Docs">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://docs.imersys.com/images/card.jpg?v2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="black">
+    <link rel="icon" sizes="192x192" href="/images/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="https://docs.imersys.com/images/imersys-logo-152.png">
+    <link rel="alternate" type="application/rss+xml" title="Feed" href="https://docs.imersys.com/feed.xml">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96167875-3', 'auto');
+
+  ga('send', 'pageview');
+
+  ga('send', 'event', 'pageload.querystring', window.location.search);
+
+  ga('send', 'event', 'pageload.hash', window.location.hash);
+
+  ga('send', 'event', 'supports.getVRDevices', 'getVRDevices' in navigator);
+
+  ga('send', 'event', 'supports.getVRDisplays', 'getVRDisplays' in navigator);
+
+  ga('send', 'event', 'supports.WEBVRPLUS', 'WEBVRPLUS' in window);
+</script>
+
+
+    
+      
+<script src="/js/compat.js"></script>
+
+    
+
+    
+      
+<link rel="stylesheet" href="/css/secondary.css">
+
+    
+  <meta name="generator" content="Hexo 4.2.1"></head>
+
+  <body data-page-layout="docs" data-page-type="ambia360">
+    <main id="main" class="main">
+
+
+<!-- Navigation. -->
+<div class="wordmark">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Imersys | Docs">
+      <span class="logo__wordmark">Imersys | Docs</span>
+    </a>
+  </header>
+
+  
+
+
+<input type="search" style='visibility: hidden'></input>
+
+
+</div>
+
+<aside id="sidebar" class="sidebar borderless-links">
+  
+
+<div id="secondary-nav" class="secondary-nav">
+  <header id="header" class="header">
+    <a id="logo" class="logo" href="/" title="Imersys | Docs">
+      <span class="logo__wordmark">Imersys | Docs</span>
+    </a>
+  </header>
+
+  <ul id="nav" class="nav">
+    
+      <li  class="nav-item">
+        <a href="/docs/"
+           class="nav-link nav-link-docs current nav-link-disabled"
+           
+           >
+          <span>Docs</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="list">
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">Introdução</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/introducao/"
+               class="subnav-link">
+              Sobre o Docs
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-active">
+        <p class="section-title-link">Ambia 360</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/"
+               class="subnav-link">
+              Instalando no Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/moodle.html"
+               class="subnav-link">
+              Instalando no Moodle
+            </a>
+          </li>
+        
+          <li class="subnav-item  subnav-item-current">
+            <a href="/docs/ambia360/catalogo.html"
+               class="subnav-link current">
+              Acessando o Catálogo Ambia
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/blackboard-usage.html"
+               class="subnav-link">
+              Adicionando vídeos ao Blackboard
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/ambia360/moodle-usage.html"
+               class="subnav-link">
+              Adicionando vídeos ao Moodle
+            </a>
+          </li>
+        
+      </ol>
+    
+      
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title section-title-inactive">
+        <p class="section-title-link">Ime Player</p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav">
+        
+          <li class="subnav-item ">
+            <a href="/docs/imeplayer/"
+               class="subnav-link">
+              Tocando vídeos 360°
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/imeplayer/integrating.html"
+               class="subnav-link">
+              Integrando na Web
+            </a>
+          </li>
+        
+          <li class="subnav-item ">
+            <a href="/docs/imeplayer/offline.html"
+               class="subnav-link">
+              Assistindo videos offline
+            </a>
+          </li>
+        
+      </ol>
+    
+  </div>
+</aside>
+
+  <!-- Documentation. -->
+  <div class="content content--structured content--ambia360 copy">
+    <div class="mobile-header">
+  <a id="sidebar-toggle" href="#" title="Toggle sidebar">&equiv;</a>
+  <h1><a href="/">Imersys | Docs</a></h1>
+  <span></span>
+</div>
+
+<script>
+  (function() {
+    var sidebarEl = document.querySelector('#sidebar');
+    var toggleEl = document.querySelector('#sidebar-toggle');
+
+    // Open sidebar on toggle click.
+    toggleEl.addEventListener('click', function () {
+      sidebarEl.classList.add('sidebar-open');
+    });
+
+    // Close sidebar when clicking content.
+    document.body.addEventListener('click', function (evt) {
+      if (evt.target !== toggleEl && !evt.target.closest('#sidebar')) {
+        sidebarEl.classList.remove('sidebar-open');
+      }
+    });
+
+    function closest (el, selector) {
+      var matchesFn;
+      var parent;
+      // Vendor prefix.
+      ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector',
+       'oMatchesSelector'].some(function (fn) {
+          if (typeof document.body[fn] == 'function') {
+            matchesFn = fn;
+            return true;
+          }
+          return false;
+      });
+      // Traverse parents.
+      while (el) {
+        parent = el.parentElement;
+        if (parent && parent[matchesFn](selector)) { return parent; }
+        el = parent;
+      }
+      return null;
+    }
+  })();
+</script>
+
+
+    <div class="copy__wrap">
+      <div class="page__section docs-header">
+        <p>
+          <a href="/docs/ambia360/" class="borderless-link">
+            ambia360 &rsaquo; Ambia 360
+          </a>
+        </p>
+      </div>
+      <h1 class="page__title">
+        Acessando o Catálogo Ambia
+      </h1>
+
+      
+
+      <blockquote>
+<p>Este guia é primariamente destinado à <strong>professores e coordenadores de instituições de ensino</strong>.</p>
+</blockquote>
+<h2 id="um-catalogo-de-experiencias-imersivas"><a href="#um-catalogo-de-experiencias-imersivas" class="headerlink" title="Um Catálogo de Experiências Imersivas!"></a>Um Catálogo de Experiências Imersivas!</h2><p>O <a href="https://catalogo.imersys.com/" target="_blank" rel="noopener">Catálogo Ambia</a> é um catalogo completo de experiências de vídeos do Ambia 360, simuladores de laboratórios com o Ambia Labs e elementos interativos do Ambia 3D. Destinado a professores e coordenadores de cursos que desejam pesquisar experiências imersivas a serem utilizadas em suas aulas e Unidades de Aprendizagem.</p>
+<h3 id="efetuando-o-login"><a href="#efetuando-o-login" class="headerlink" title="Efetuando o login"></a>Efetuando o login</h3><p>Para acessar o catálogo é necessário uma conta com usuário e senha <strong>fornecida pela sua instituição de ensino</strong>.</p>
+<p>Se você já possui o usuário e a senha, prossiga efetuando o login. Caso contrário, entre em contato com sua instituição - possivelmente ela já obteve este código previamente junto à Imersys.</p>
+<p><img src="../images/catalogo/Catalogo-SS1.png" alt="360&deg; Image Viewer"></p>
+<h3 id="utilizando-o-catalogo"><a href="#utilizando-o-catalogo" class="headerlink" title="Utilizando o Catálogo"></a>Utilizando o Catálogo</h3><p>Utilize a barra lateral do <strong>Catálogo</strong> para filtrar pelas grandes áreas ou então a barra de pesquisa superior para pesquisar textualmente por vídeos, laboratórios ou elementos interativos. Após encontrar a experiência desejada, clique no ícone lateral como mostrado na imagem abaixo.</p>
+<p><img src="../images/catalogo/Catalogo-SS2.png" alt="360&deg; Image Viewer"></p>
+<p>Ao clicar no ícone, um menu será aberto e você irá clicar no botão que se refere a seu <strong>LMS</strong> para copiar o código da experiência.</p>
+<p><img src="../images/catalogo/Catalogo-SS3.png" alt="360&deg; Image Viewer"></p>
+
+
+      <!-- Previous / Next navigation. -->
+      <footer class="footer guide-links c">
+        
+          <span class="float-left">
+            <a href="/docs/ambia360/moodle.html" class="guide-link guide-link-left">← Instalando no Moodle </a></span>
+        
+        
+          <span class="float-right">
+            <a href="/docs/ambia360/blackboard-usage.html" class="guide-link guide-link-right">Adicionando vídeos ao Blackboard →</a></span>
+        
+      </footer>
+
+      <footer class="footer footnote">
+  <p>
+    Os produtos da Imersys contêm copyright e licenças proprietárias individuais. Por favor entre em contato conosco para certificar das condições antes de utilizar qualquer produto.
+  </p>
+  <p>Achou algum erro ou sugestão da documentação? <br><br> <a href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/catalogo.md" class="github-file-link" target="_blank" rel="external">Faça uma sugestão de edição no GitHub</a></p>
+</footer>
+
+    </div>
+
+    <div class="secondary-sidebar">
+      
+
+<div id="table-of-contents" class="nav-list">
+  <p class="section-title docs-section-title">Conteúdo</p>
+
+  <ul class="subnav">
+    
+      <li class="subnav-item">
+        <a class="subnav-link" href="#um-catalogo-de-experiencias-imersivas">Um Catálogo de Experiências Imersivas!</a>
+
+        <!-- Nested. -->
+        
+          <ul>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#efetuando-o-login">Efetuando o login</a>
+              </li>
+            
+              <li class="subnav-item">
+                <a class="subnav-link" href="#utilizando-o-catalogo">Utilizando o Catálogo</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+</div>
+
+      
+
+      <div class="doc-actions">
+        <a class="docs-suggest-edit github-file-link" href="https://github.com/imersys/docs-site-content/edit/master/docs/ambia360/catalogo.md" target="_blank" rel="external">Editar Página</a>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+    
+      
+<script src="/js/common.js"></script>
+
+      
+        
+<script src="/js/docs.js"></script>
+
+      
+    
+  </body>
+</html>
