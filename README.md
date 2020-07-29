@@ -20,13 +20,12 @@ generators, and helpers in `scripts/`, you will need to restart the server on
 every change.
 
 ## Deployment
+
+GitHub Actions does all the job on generating the bundle (`npm run generate`) and deploying it to GitHub Pages. You simply need to run the following therefore:
+
     npm version patch
 
     git push && git push origin --tags
-
-    npm run generate
-
-    firebase deploy
 
 ## Credits
 
