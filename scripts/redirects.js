@@ -39,7 +39,7 @@ hexo.extend.generator.register('docs-redirects', function () {
   ];
   redirectObjs.push([
     ['docs/', 'docs/introducao/'],
-    ['docs/ambia360/', 'docs/ambia360/'],
+    ['docs/ambia/', 'docs/ambia/'],
   ]);
 
   // Flatten arrays since `redirectObjs` is an array of arrays of arrays. We just want a flat
