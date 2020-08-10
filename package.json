@@ -28,26 +28,19 @@
     "urljoin.js": "^0.1.0"
   },
   "devDependencies": {
-    "docs-site-content": "github:imersys/docs-site-content",
     "es6-template-strings": "^2.0.1",
     "hexo-cli": "^3.1.0",
     "multidep": "github:ngokevin/node-multidep",
-    "recursive-copy": "^2.0.5",
-    "rmdir": "^1.2.0",
-    "superagent": "^5.2.1",
-    "superagent-promise": "^1.1.0",
     "yaml-cat": "^0.3.2"
   },
   "hexo": {
     "version": "4.2.1"
   },
   "scripts": {
-    "copydocs": "node node_scripts/copyDocs.js multidep.json",
     "clean": "hexo clean",
     "dev": "npm run clean && npm run generate:config && npm run server",
     "generate": "npm run generate:config && hexo generate",
     "generate:config": "yaml-cat _config.prod.yml _config.local.yml -n -m > _config.yml",
-    "installdocs": "multidep multidep.json && npm run copydocs",
     "server": "hexo server",
     "start": "npm run dev",
     "test": "node tests/checkLinks.js"

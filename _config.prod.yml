@@ -121,8 +121,8 @@ google_analytics: UA-96167875-3
 github:
   imersysdocs:
     username: imersys
-    repo: docs-site-content
-    url: https://github.com/imersys/docs-site-content/
+    repo: docs-site
+    url: https://github.com/imersys/docs-site/
 
 
 aframe_lib:
