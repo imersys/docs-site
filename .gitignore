@@ -11,4 +11,3 @@ node_modules/
 npm-debug*.log
 public/
 src/_drafts
-src/docs/
