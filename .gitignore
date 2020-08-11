@@ -2,7 +2,6 @@
 .DS_Store
 .deploy*/
 .multidep
-.firebase/
 Thumbs.db
 _config.local.yml
 _config.yml
