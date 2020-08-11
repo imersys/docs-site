@@ -1,7 +1,7 @@
 ---
 title: Assistindo videos offline
 type: imeplayer
-layout: docs
+layout: pages
 parent_section: imeplayer
 order: 3
 ---

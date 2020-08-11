@@ -229,7 +229,7 @@ hexo.extend.helper.register('docs_nav_sort', function (pages) {
  * @param {object} pages - site.pages.
  */
 hexo.extend.helper.register('docs_root_path', function (pages, version) {
-  var page = docs_version_filter(pages).find({parent_section: 'docs'})
+  var page = version_filter('docs/', pages).find({parent_section: 'docs'})
                                                 .sort('section_order')
                                                 .sort('order').data[0];
   return '/' + page.path.replace('index.html', '');
@@ -238,12 +238,12 @@ hexo.extend.helper.register('docs_root_path', function (pages, version) {
 /**
  * Filter documentation navigation to only include pages of the version being browsed.
  */
-hexo.extend.helper.register('docs_version_filter', function (pages, version) {
-  return docs_version_filter(pages);
+hexo.extend.helper.register('version_filter', function (type, pages, version) {
+  return version_filter(type, pages);
 });
-function docs_version_filter (pages) {
+function version_filter (type, pages) {
   return pages.filter(function (page) {
-    return page.path.indexOf('docs/') !== -1;
+    return page.path.indexOf(type) !== -1;
   });
 }
 
