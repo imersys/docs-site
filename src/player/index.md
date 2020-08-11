@@ -1,6 +1,6 @@
 ---
-title: Comunidade
-type: comunidade
+title: Player
+type: player
 layout: page
 toc: true
 ---
