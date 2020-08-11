@@ -1,5 +1,5 @@
 ---
-title: Instalando o Labs no PC
+title: Instalando Simuladores no PC
 type: ambia
 layout: docs
 parent_section: ambia
