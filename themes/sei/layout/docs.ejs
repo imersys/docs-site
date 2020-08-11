@@ -37,13 +37,6 @@
     <%- partial('partials/secondary/mobile_header') %>
 
     <div class="copy__wrap">
-      <div class="page__section docs-header">
-        <p>
-          <a href="<%- page_url(activeSection.path) %>" class="borderless-link">
-            <%- activeVersion %> &rsaquo; <%= activeSection.section_title %>
-          </a>
-        </p>
-      </div>
       <h1 class="page__title">
         <%- page.title.replace('<', '&lt;').replace('>', '&gt;') %>
       </h1>
