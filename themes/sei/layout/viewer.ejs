@@ -1,0 +1,49 @@
+<%- partial('partials/secondary/sidebar_wordmark') %>
+<aside id="sidebar" class="sidebar borderless-links">
+  <%- partial('partials/secondary/sidebar_header', {site: site}) %>
+  <div class="list">
+    <% version_filter('viewer/', site.pages).find({parent_section: 'viewer'})
+                                                             .sort('section_order')
+                                                             .each(function (section) { %>
+      <% if (page.type === section.type) { activeSection = section } %>
+
+      <!-- Section title. -->
+      <h3 class="section-title docs-section-title<%- page.type === section.type ? ' section-title-active' : ' section-title-inactive' %>">
+        <p class="section-title-link"><%= section.section_title %></p>
+      </h3>
+
+      <!-- Section links. -->
+      <ol class="subnav section-subnav<%= section.show_guide ? ' numbered-subnav' : '' %>">
+        <% version_filter('viewer/', docs_nav_sort(site.pages.find({type: section.type}))).forEach(function (p) { %>
+          <li class="subnav-item <%= page.title === p.title ? ' subnav-item-current' : '' %>">
+            <a href="<%- page_url(p.path) %>"
+               class="subnav-link<%= page.title === p.title ? ' current' : '' %>">
+              <%- p.title.replace('<', '&lt;').replace('>', '&gt;') %>
+            </a>
+          </li>
+        <% }) %>
+      </ol>
+    <% }) %>
+  </div>
+
+</aside>
+
+<div class="content content--structured content--<%- page.type %> copy">
+  <%- partial('partials/secondary/mobile_header') %>
+
+  <div class="copy__wrap">
+    <h1 class="page__title"><%- page.title %></h1>
+
+    <%- page.content %>
+
+    <% if (page.type === 'showcase') { %>
+      <%- partial('partials/showcase', {projects: site.data.showcase.projects}) %>
+    <% } %>
+
+    <%- partial('partials/docs/footer', {item: page}) %>
+  </div>
+
+  <div class="secondary-sidebar">
+    <%- partial('partials/toc', {page: page}) %>
+  </div>
+</div>
