@@ -8,19 +8,19 @@ order: 4
 
 > Este guia tem o objetivo de auxiliar a instalação do **Ambia Labs** na plataforma **PC**. O guia é primariamente estinado à **administradores de sistemas**.
 
-## Requisitos técnicos
+## Requisitos Técnicos
 
 A seguir são listados os requisitos técnicos para realizar a instalação do **Simulador**
 
-1. **Informações de login** para o [catálogo] [https://catalogo.imersys.com] (Fornecido via email pela Imersys)
+1. **Informações de login** para o [catálogo](https://catalogo.imersys.com) (fornecido via email pela Imersys)
 2. Uma máquina com sistema operacional **Windows 10**
 3. **2GB** de espaço disponível para instalação
 
-## Guia de instalação
+## Guia de Instalação
 
 ### 1º Passo: Acessando o Catálogo
 
-Para encontrar o **Instalador** do **Simulador** é necessário que o usuário vá ao [catálogo][https://catalogo.imersys.com/home] da Imersys e entre com as informações de login. 
+Para encontrar o **Instalador** do **Simulador** é necessário que o usuário vá ao [catálogo](https://catalogo.imersys.com) da Imersys e entre com as informações de login.
 
 ![360&deg; Image Viewer](images/Gdi-SS01.png)
 
@@ -62,7 +62,7 @@ Uma janela com as opções de instalação surge, na qual o usuário deve inicia
 
 >E assim foi concluída a instalação do **Simulador** na máquina. Agora basta apenas abrir o programa.
 
-## Testando a instalação
+## Testando a Instalação
 
 Para testar o **Simulador**, o usuário deve executar, na sua máquina, o aplicativo AmbiaVR. Ao iniciar, o usuário terá que entrar com as **informações de login**.
 
@@ -70,9 +70,7 @@ Para testar o **Simulador**, o usuário deve executar, na sua máquina, o aplica
 
 Ao iniciar, o AmbiaVR irá procurar por atualizações, basta esperar e o usuário agora pode explorar os **Laboratórios de Simulação** a vontade.
 
-## Eventuais problemas
-
-
+## Eventuais Problemas
 
 ### Habilitando instalação de aplicativos de terceiros no Windows
 Em versões não atualizadas do Windows, é possível a instalação ser bloqueada pelo sistema operacional por razão de ser de um aplicativo de fora da Microsoft Store por padrão.Essa Exceção ocorreu na versão 1903 do Windows 10 e possivelmente também pode ocorrer em versões anteriores. Nesse caso o usuário precisa habilitar o *sideload* de Apps nas configurações. Se esse for o caso, basta clicar em **habilitar o modo sideload de Apps** na janela com o erro de falha na instalação. O Windows abrirá uma janela pedindo confirmação se o usuário pretende abrir as configurações. Nas configurações o usuário deve selecionar **sideload de Apps**.
