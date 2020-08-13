@@ -72,11 +72,7 @@ Ao iniciar, o AmbiaVR irá procurar por atualizações, basta esperar e o usuár
 
 ## Eventuais problemas
 
-### `Fatal Error` após o login
 
-![360&deg; Image Viewer](images/Gdi-SS11.png)
-
-Após o login caso ocorra um erro de execução como o demonstrado na imagem abaixo, é possível que o usuário tenha um headset de Realidade Virtual da Oculus conectado. Para resolver esse problema basta remover o headset e fechar o software da Oculus.
 
 ### Habilitando instalação de aplicativos de terceiros no Windows
 Em versões não atualizadas do Windows, é possível a instalação ser bloqueada pelo sistema operacional por razão de ser de um aplicativo de fora da Microsoft Store por padrão.Essa Exceção ocorreu na versão 1903 do Windows 10 e possivelmente também pode ocorrer em versões anteriores. Nesse caso o usuário precisa habilitar o *sideload* de Apps nas configurações. Se esse for o caso, basta clicar em **habilitar o modo sideload de Apps** na janela com o erro de falha na instalação. O Windows abrirá uma janela pedindo confirmação se o usuário pretende abrir as configurações. Nas configurações o usuário deve selecionar **sideload de Apps**.
