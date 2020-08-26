@@ -10,7 +10,7 @@ order: 2
 
 ## Um Catálogo de Experiências Imersivas!
 
-O [Catálogo Ambia](https://catalogo.imersys.com/) é um catalogo completo de experiências de vídeos do Ambia 360, simuladores de laboratórios com o Ambia Labs e elementos interativos do Ambia 3D. Destinado a professores e coordenadores de cursos que desejam pesquisar experiências imersivas a serem utilizadas em suas aulas e Unidades de Aprendizagem.
+O [catálogo Ambia](https://catalogo.imersys.com/) é um acervo completo de experiências de Vídeos 360, Objetos de Aprendizagem 3D e Simuladores de laboratórios. Destinado a professores e coordenadores de cursos que desejam pesquisar experiências imersivas a serem utilizadas em suas aulas e Unidades de Aprendizagem.
 
 ### Efetuando o login
 
@@ -22,10 +22,10 @@ Se você já possui o usuário e a senha, prossiga efetuando o login. Caso contr
 
 ### Utilizando o Catálogo
 
-Utilize a barra lateral do **Catálogo** para filtrar pelas grandes áreas ou então a barra de pesquisa superior para pesquisar textualmente por vídeos, laboratórios ou elementos interativos. Após encontrar a experiência desejada, clique no ícone lateral como mostrado na imagem abaixo.
+Utilize a barra lateral do **catálogo** para filtrar pelas grandes áreas ou então a barra de pesquisa superior para pesquisar textualmente por vídeos, 3Ds ou simuladores. Após encontrar a experiência desejada, clique no ícone lateral como mostrado na imagem abaixo.
 
 ![360&deg; Image Viewer](../images/Catalogo-SS2.png)
 
-Ao clicar no ícone, um menu será aberto e você irá clicar no botão que se refere a seu **LMS** para copiar o código da experiência.
+Ao clicar no ícone, uma janela será aberta e você poderá salvar a experiência numa lista. Ao clicar em **"VER"**, você irá até a página das listas e lá poderá compartilhar a experiência para utilizar no *LMS* ou outro aplicativo de sua instituição.
 
 ![360&deg; Image Viewer](../images/Catalogo-SS3.png)
