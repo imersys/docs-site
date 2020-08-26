@@ -1,9 +1,9 @@
 ---
-title: Adicionando UAs, vídeos e 3D no Moodle
-type: ambia
+title: Vídeos 360 e OAs 3D no Moodle
+type: basic_usage
 layout: docs
-parent_section: ambia
-order: 6
+parent_section: basic_usage
+order: 2
 ---
 
 [moodle]: ./moodle.md
@@ -13,37 +13,37 @@ order: 6
 
 ## Requisitos Técnicos
 
-O primeiro passo para adicionar *experiências imersivas* do Ambia -- i.e. **Unidades de Aprendizagem ("UA")**, **vídeos 360**, **3D interativos**, **dentre outras** -- é garantir que a [instalação do **Ambia**][moodle] foi realizada corretamente no Moodle em sua instituição de ensino. Caso a instalação não tenha sido feita, peça auxílio ao administrador do sistema de sua instituição para que a faça antes de prosseguir neste guia.
+O primeiro passo para adicionar *experiências imersivas* do Ambia -- i.e. **Vídeos 360**, **Objetos de Aprendizagem 3D**, **dentre outras** -- é garantir que a [instalação do **Ambia**][moodle] foi realizada corretamente no Moodle em sua instituição de ensino. Caso a instalação não tenha sido feita, peça auxílio ao administrador do sistema de sua instituição para que a faça antes de prosseguir neste guia.
 
-## Guia para adicionar UAs, vídeos 360 e 3D interativos
+## Guia para adicionar Vídeos 360 e OAs 3D
 
 ### 1º Passo: Selecionando um curso no Moodle
 
 Como primeiro passo para adicionar uma *experiência imersiva*, selecione a opção **Página inicial do site** no menu lateral e então selecione algum curso para adicionar o **Ambia**.
 
-![360&deg; Image Viewer](images/Moodle-SS5.png)
+![](../images/Moodle-SS5.png)
 
 No exemplo da imagem utilizamos o curso "Pedagogia", mas a princípio você pode utilizar *qualquer* curso.
 
 Na sequência, dentro do curso selecionado procure o ícone de engrenagem à direita da página e selecione a opção **Ativar edição**.
 
-![360&deg; Image Viewer](images/Moodle-SS6.png)
+![](../images/Moodle-SS6.png)
 
 Com o modo de edição habilitado, ainda à direita da página selecione a opção **Adicionar uma atividade ou recurso**.
 
-![360&deg; Image Viewer](images/Moodle-SS7.png)
+![](../images/Moodle-SS7.png)
 
 Dentro do pop-up de **Adicionar uma atividade ou recurso** selecione a ferramenta **Ambia** e selecione **Adicionar**.
 
-![360&deg; Image Viewer](images/Moodle-SS8.png)
+![](../images/Moodle-SS8.png)
 
 -----------------------------------
 
-![360&deg; Image Viewer](images/Moodle-SS9.png)
+![](../images/Moodle-SS9.png)
 
 Na página seguinte, selecione a opção **Mostrar mais**.
 
-![360&deg; Image Viewer](images/Moodle-SS10.png)
+![](../images/Moodle-SS10.png)
 
 ### 2º Passo: Copiando o código da experiência do Catálogo
 
@@ -57,7 +57,7 @@ Agora é necessário preencher as informações coletadas no **Catálogo** ao Mo
 
 Preencha o nome e, no campo **Parâmetros customizados** coloque o parâmetro que foi copiado do **Catálogo**.
 
-![360&deg; Image Viewer](images/Moodle-SS11.png)
+![](../images/Moodle-SS11.png)
 
 Pronto! Uma *experiência imersiva* da coleção do **Ambia** foi adicionada com sucesso. Para assistir e interagir com a UA, o vídeo 360 ou o 3D interativo agora, vá até a página do curso em que foi adicionado e selecione o título da experiência.
 

@@ -1,7 +1,7 @@
 ---
-title: Sobre o Docs
-section_title: Introdução
-type: introducao
+title: Visão Geral
+section_title: Começando
+type: getting_started
 layout: docs
 order: 1
 parent_section: docs
@@ -24,6 +24,6 @@ Caso seja sua primeira vez por aqui, talvez as seguintes dicas te ajudem a inici
 
 3. Envie comentários e dúvidas para o e-mail `suporte @ imersys com`. Será um prazer te ajudar!
 
-4. Contribua com esta documentação editando diretamente no [Github](https://github.com/imersys/docs-site/edit/master/src/docs/introducao/index.md).
+4. Contribua com esta documentação editando diretamente no [Github](https://github.com/imersys/docs-site/edit/master/src/docs/getting_started/index.md).
 
 Divirta-se!

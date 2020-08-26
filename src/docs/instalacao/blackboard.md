@@ -1,9 +1,11 @@
 ---
-title: Instalando no Blackboard
-type: ambia
+title: Blackboard
+section_title: Instalação
+type: installation
 layout: docs
-parent_section: ambia
-order: 2
+parent_section: docs
+section_order: 2
+order: 1
 ---
 
 > Este guia tem o objetivo de auxiliar a instalação do **Ambia** na plataforma **Blackboard Learn**. O guia é primariamente destinado à **administradores de sistemas**.
@@ -27,7 +29,7 @@ A seguir são listados os requisitos técnicos necessários para realizar a inst
 
 Se sua instituição satifaz todos os requisitos técnicos da seção anterior, o primeiro passo para iniciar a instalação da ferramenta é ir até a área do **Administrador**.
 
-![360&deg; Image Viewer](images/Blackboard-SS1.png)
+![360&deg; Image Viewer](../images/Blackboard-SS1.png)
 
 > Se você não tem acesso à essa área, peça ao administrador do Blackboard Learn de sua instituição para que instale esta ferramenta para você ou peça para que ele lhe conceda acesso.
 
@@ -35,11 +37,11 @@ Se sua instituição satifaz todos os requisitos técnicos da seção anterior, 
 
 Dentro da seção **Integrações** selecione a opção **Provedores de ferramenta de LTI**.
 
-![360&deg; Image Viewer](images/Blackboard-SS2.png)
+![360&deg; Image Viewer](../images/Blackboard-SS2.png)
 
 Depois selecione na barra superior a opção **Registrar domínio do provedor**.
 
-![360&deg; Image Viewer](images/Blackboard-SS3.png)
+![360&deg; Image Viewer](../images/Blackboard-SS3.png)
 
 ### 3º Passo: Configurando a ferramenta
 
@@ -47,16 +49,16 @@ Agora vamos preencher as informações necessárias e configurações para insta
 
 Você irá utilizar os dados fornecidos pela Imersys para preencher o campo **Domínio do provedor**. Também será necessário selecionar a opção **Aprovado** no **Status do provedor de domínio**.
 
-![360&deg; Image Viewer](images/Blackboard-SS4.png)
+![360&deg; Image Viewer](../images/Blackboard-SS4.png)
 
 Na seção de **Configuração padrão** selecione a opção **Definir globalmente** e nos 
 campos abaixo insira as chaves que foram fornecidas pra você pela Imersys.
 
-![360&deg; Image Viewer](images/Blackboard-SS5.png)
+![360&deg; Image Viewer](../images/Blackboard-SS5.png)
 
 Na opção **Campos de usuário para enviar** é importante deixar selecionadas todas as opções
 
-![360&deg; Image Viewer](images/Blackboard-SS6.png)
+![360&deg; Image Viewer](../images/Blackboard-SS6.png)
 
 Em seguida clique em **Enviar** e pronto! Se você seguiu todos os passos corretamente sua
 ferramenta **Ambia** foi instalada com sucesso. Se algo deu errado revise a [instalação](#guia-de-instalacao) para ver se nenhum erro foi cometido.

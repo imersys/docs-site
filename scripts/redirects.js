@@ -38,7 +38,7 @@ hexo.extend.generator.register('docs-redirects', function () {
     getComponentSectionRedirectObjs()
   ];
   redirectObjs.push([
-    ['docs/', 'docs/introducao/'],
+    ['docs/', 'docs/getting_started/'],
     ['docs/ambia/', 'docs/ambia/'],
   ]);
 
@@ -62,7 +62,7 @@ function expandRedirectObjs (redirectObjs) {
  */
 function getDocRootRedirectObjs () {
   return aframeVersions.map(function getRedirectObj (version) {
-    return ['docs/' + version + '/', 'docs/' + version + '/introducao/'];
+    return ['docs/' + version + '/', 'docs/' + version + '/getting_started/'];
   });
 }
 
