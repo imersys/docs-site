@@ -40,7 +40,26 @@ Em breve...
 
 ### UI
 
-Em Breve...
+Parâmetros para customização de UI através da URL. Os parâmetros com prefixo `desktop` são para interface Desktop e com prefixo `mobile` para Mobile.
+
+| Parâmetro de URL        | Valor         | Descrição                                                                                   |
+| ----------------------- | -----         | ------------------------------------------------------------------------------------------  |
+| desktopmenu             | right - left  | Posiciona o menu do lado esquerdo ou direito. Default: left                                 |
+| mobileinfobutton        | true - false  | Ativa ou desativa o botão INFO dentro do menu Ambia. Default: true                          |
+| mobilehelpbutton        | true - false  | Ativa ou desativa o botão HELP dentro do menu Ambia. Default: true                          |
+| mobilearbutton          | true - false  | Ativa ou desativa o botão AR dentro do menu Ambia. Default: true                            |
+| mobilefullscreenbutton  | true - false  | Ativa ou desativa o botão FULLSCREEN dentro do menu Ambia. Default: true                    |
+| autorotate              | true - false  | Ativa ou desativa a auto rotação do objeto 3D antes da primeira interação. Default: false   | 
+
+
+#### Exemplo de utilização:
+
+```html
+
+https://viewer.imersys.com/lo/a735e894-9256-48b4-b1c4-c3a2550e975c/#desktopmenu=right
+
+```
+
 
 
 ## Agora é com você!
